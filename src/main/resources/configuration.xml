@@ -5,7 +5,19 @@
 <configuration>
 
     <!-- 指定properties配置文件， 我这里面配置的是数据库相关 -->
-    <properties resource="dbConfig.properties"></properties>
+    <!--博客中说，”这儿可以注意一下顺序，xml配置优先， 外部指定properties配置其次“
+        经过我的调试，说错了，如果两处同时配置，还是会以resource="dbConfig.properties为主。
+        mybatis源码中
+         if (resource != null) {//putAll参考MapTest.java类
+        defaults.putAll(Resources.getResourceAsProperties(resource));会把xml里面配置覆盖。
+        所以我下面错误的配置，仍然可以运行，因为采用的是dbConfig.properties配置
+     -->
+    <properties resource="dbConfig.properties">
+        <property name="driver" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/northdream"/>
+        <property name="username" value="north"/>
+        <property name="password" value="northpw"/>
+    </properties>
 
     <!-- 指定Mybatis使用log4j -->
     <settings>
@@ -19,9 +31,9 @@
                 <!--
                 如果上面没有指定数据库配置的properties文件，那么此处可以这样直接配置
               <property name="driver" value="com.mysql.jdbc.Driver"/>
-              <property name="url" value="jdbc:mysql://localhost:3306/test1"/>
+              <property name="url" value="jdbc:mysql://localhost:3306/southdream"/>
               <property name="username" value="root"/>
-              <property name="password" value="root"/>
+              <property name="password" value="novacloud"/>
                -->
 
                 <!-- 上面指定了数据库配置文件， 配置文件里面也是对应的这四个属性 -->
