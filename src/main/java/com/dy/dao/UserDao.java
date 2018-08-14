@@ -10,7 +10,12 @@ import java.util.List;
  * @Description:
  */
 public interface UserDao {
-    public void insert(User user);
+
     public User findUserById (int userId);
-    public List<User> findAllUsers();
+
+    public void insertUser (User user);
+
+    public void updateUser (User user);
+
+    public void deleteUser (User user);
 }

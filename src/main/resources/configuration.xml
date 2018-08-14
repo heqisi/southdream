@@ -32,7 +32,10 @@
            注意：注册了别名不使用，仍然使用com.dy.entity会报错。
             -->
     <typeAliases>
-        <typeAlias alias="UserEntity" type="com.dy.entity.User" />
+        <typeAlias alias="student" type="com.dy.entity.Student" />
+        <!--写完courseDao.xml运行失败，配置这里后正常了。-->
+        <typeAlias alias="course" type="com.dy.entity.Course" />
+        <typeAlias alias="user" type="com.dy.entity.User" />
     </typeAliases>
 
     <environments default="development">
@@ -59,7 +62,10 @@
 
     <!-- 映射文件，mybatis精髓， 后面才会细讲 -->
     <mappers>
-        <mapper resource="com/dy/dao/userDao-mapping.xml"/>
+        <mapper resource="com/dy/dao/userDao.xml"/>
+        <mapper resource="com/dy/dao/studentDao.xml"/>
+        <mapper resource="com/dy/dao/courseDao.xml"/>
+
     </mappers>
 
 
