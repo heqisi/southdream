@@ -58,7 +58,10 @@ public class TransientTest {
 class NewUser implements Serializable {
     private static final long serialVersionUID = 8294180014912103005L;
 
-    public static String username;
+    public  static transient  String username;
+    //                                  ---static-------transient-------static transient序列化后
+    //没有 newUser.username = "jmwang"    Alexia          null           Alexia
+    //  有 newUser.username = "jmwang"    jmwang          null           jmwang
     private transient String passwd;
 
     public String getUsername() {
