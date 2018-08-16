@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<!-- mapper 为根元素节点， 一个namespace对应一个dao -->
+<mapper namespace="com.dy.dao.CarDao">
+
+        <resultMap type="car" id="carResult">
+            <id column="carid" property="id"/>
+            <result column="cartype" property="type"></result>
+            <association resultMap="engineResult" property="engine"/>
+            <association resultMap="brakesResult" property="brakes"/>
+        </resultMap>
+        <resultMap type="engine" id="engineResult">
+            <result column="enginetype" property="type"/>
+            <result column="enginecylinders" property="cylinders"/>
+        </resultMap>
+        <resultMap type="brakestype" id="brakesResult">
+            <result column="brakesType" property="brakestype"/>
+        </resultMap>
+
+        <select  resultMap="carResult" id="getCar">
+            select * from cars
+        </select>
+
+        <select  resultMap="carResult" id="getCarsNonUnique">
+            select 1 as carid, type, engine, enginecylinders, brakestype from cars
+        </select>
+
+        <select  resultMap="carResult" id="getCars2">
+            select 1 as carid, type, engine, enginecylinders, brakestype from cars where carid in (1,2)
+        </select>
+
+</mapper>

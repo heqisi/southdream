@@ -1,0 +1,14 @@
+1、2018年8月16日15:13:44 ymj
+参考https://blog.csdn.net/isea533/article/details/20868189
+编写完后运行报错：
+org.apache.ibatis.binding.BindingException: Type interface com.dy.dao.CarDao is not known to the MapperRegistry.
+
+	at org.apache.ibatis.binding.MapperRegistry.getMapper(MapperRegistry.java:47)
+	at org.apache.ibatis.session.Configuration.getMapper(Configuration.java:655)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.getMapper(DefaultSqlSession.java:222)
+	at com.dy.entity.CarDaoTest.shouldGetAllCars(CarDaoTest.java:25)
+	........
+
+solution:
+1、carDao.xml中，<mapper namespace="com.dy.dao.CarDao">  之前是courseDao.xml
+2、carDao.xml中，property和column乱七八糟的，不对应。
