@@ -31,7 +31,7 @@
     </resultMap>
 
     <!-- 这儿将返回类型设置成了上面指定的studentMap -->
-    <select id="findStudentById" resultMap="studentMap">
+    <select  resultMap="studentMap" id="findStudentById">
         SELECT s.*, c.*
         FROM t_student s
         LEFT JOIN t_course c ON s.stu_course_id=c.course_id

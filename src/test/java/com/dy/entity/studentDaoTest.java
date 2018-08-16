@@ -21,11 +21,17 @@ public class studentDaoTest {
     public void findCourseById() {
         SqlSessionFactory sqlSessionFactory = getSessionFactory();
         SqlSession sqlSession = sqlSessionFactory.openSession();
-        StudentDao studentDao = sqlSession.getMapper(StudentDao.class);
-        Student student = studentDao.findStudentById("20140101");
-        List<Course> courseList = student.getCourseList();
-        for (Course course: courseList) {
-            System.out.println(course.getId() + "   " + course.getName());
+        try {
+            StudentDao studentDao = sqlSession.getMapper(StudentDao.class);
+            Student student = studentDao.findStudentById("20140101");
+            List<Course> courseList = student.getCourseList();
+            for (Course course: courseList) {
+                System.out.println(course.getId() + "   " + course.getName());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            sqlSession.close();
         }
     }
 

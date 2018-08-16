@@ -17,7 +17,7 @@
              select course_id as id, course_name as name, course_delete_flg as deleteFlag
              from t_course where course_id=?
      -->
-    <select id="findCourseById"  resultType="course" >
+    <select resultType="course" id="findCourseById">
         select course_id as id, course_name as name, course_delete_flg as deleteFlag
         from t_course
         where course_id=#{courseId}

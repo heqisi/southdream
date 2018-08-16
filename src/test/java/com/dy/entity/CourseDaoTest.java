@@ -8,6 +8,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * @Auther: yuanmaojun
@@ -20,9 +21,15 @@ public class CourseDaoTest {
     public void findCourseById() {
         SqlSessionFactory sqlSessionFactory = getSessionFactory();
         SqlSession sqlSession = sqlSessionFactory.openSession();
-        CourseDao courseDao = sqlSession.getMapper(CourseDao.class);
-        Course course = courseDao.findCourseById(1);
-        System.out.println(course.toString());
+        try {
+            CourseDao courseDao = sqlSession.getMapper(CourseDao.class);
+            Course course = courseDao.findCourseById(1);
+            System.out.println(course.toString());
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            sqlSession.close();//关闭它
+        }
     }
 
 
@@ -31,8 +38,9 @@ public class CourseDaoTest {
         SqlSessionFactory sessionFactory = null;
         String resource = "configuration.xml";
         try {
-            sessionFactory = new SqlSessionFactoryBuilder().build(Resources
-                    .getResourceAsReader(resource));
+            //输入流(InputStream)实例
+            InputStream inputStream = Resources.getResourceAsStream(resource);
+            sessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         } catch (IOException e) {
             e.printStackTrace();
         }

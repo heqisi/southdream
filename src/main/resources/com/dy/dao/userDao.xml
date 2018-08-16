@@ -32,23 +32,23 @@
 
     <!-- 8. timeout  (可选配置， 默认为unset, 依赖驱动)
       这个设置是在抛出异常之前，驱动程序等待数据库返回请求结果的秒数。默认值为 unset（依赖驱动）。 -->
-        <select id="findUserById" resultType="user" >
+        <select  resultType="user" id="findUserById">
             select * from user where id = #{id}
         </select>
         <!-- 对应userDao中的insertUser方法，  -->
-        <insert id="insertUser" parameterType="user">
+        <insert  parameterType="user" id="insertUser">
             insert into user(id, name, password, age, deleteFlag)
             values(#{id}, #{name}, #{password}, #{age}, #{deleteFlag})
         </insert>
 
         <!-- 对应userDao中的updateUser方法 -->
-        <update id="updateUser" parameterType="user">
+        <update  parameterType="user" id="updateUser">
             update user set name = #{name}, password = #{password}, age = #{age}, deleteFlag = #{deleteFlag}
             where id = #{id};
         </update>
 
         <!-- 对应userDao中的deleteUser 方法 -->
-        <delete id="deleteUser" parameterType="user">
+        <delete  parameterType="user" id="deleteUser">
             delete from user where id = #{id};
         </delete>
         </mapper>
