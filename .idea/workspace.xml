@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7dde8396-078b-45f2-be1c-8a532e72a159" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dy/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/dy/dao/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dy/entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/dy/entity/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/dy/dao/userDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/dy/dao/userDao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/dy/entity/CarDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/dy/entity/CarDaoTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/dy/entity/UserDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/dy/entity/UserDaoTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -39,42 +34,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserDaoTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserDaoTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/dy/entity/UserDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="50" column="22" lean-forward="false" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+            <state relative-caret-position="189">
+              <caret line="55" column="34" lean-forward="true" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
               <folding>
-                <element signature="e#949#955#0" expanded="true" />
-                <element signature="e#1373#1389#0" expanded="true" />
+                <element signature="e#982#988#0" expanded="true" />
+                <element signature="e#1406#1422#0" expanded="true" />
                 <element signature="method#getSessionFactory#0;class#UserDaoTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <file leaf-file-name="userDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/dy/dao/userDao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+            <state relative-caret-position="324">
+              <caret line="35" column="45" lean-forward="true" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+              <folding>
+                <marker date="1534475357145" expanded="true" signature="1628:1663" ph="select * fro... user" />
+                <marker date="1534475357145" expanded="true" signature="1792:1916" ph="insert into user... " />
+                <marker date="1534475357145" expanded="true" signature="2044:2169" ph="update user " />
+                <marker date="1534475357145" expanded="true" signature="2299:2332" ph="delete from " />
+                <marker date="1534475357145" expanded="true" signature="2902:2935" ph="insert into users... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CarDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dy/dao/CarDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userDao.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/dy/dao/userDao.xml">
+      <file leaf-file-name="dbConfig.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/dbConfig.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="75" column="14" lean-forward="false" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
-              <folding>
-                <marker date="1534474714875" expanded="true" signature="1628:1663" ph="select * fro... user" />
-                <marker date="1534474714875" expanded="true" signature="1792:1916" ph="insert into user... " />
-                <marker date="1534474714875" expanded="true" signature="2044:2169" ph="update user " />
-                <marker date="1534474714875" expanded="true" signature="2299:2332" ph="delete from " />
-                <marker date="1534474714875" expanded="true" signature="2902:2935" ph="insert into users... " />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configuration.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/configuration.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="45" column="14" lean-forward="false" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,11 +97,21 @@
       <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dy/dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="32" column="71" lean-forward="false" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="71" />
+            <state relative-caret-position="628">
+              <caret line="32" column="54" lean-forward="false" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="String.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Java/java8u171/src.zip!/java/lang/String.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="110" column="19" lean-forward="false" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -170,9 +195,9 @@
         <option value="$PROJECT_DIR$/src/test/java/com/dy/entity/CarDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dy/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dy/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/dy/dao/userDao.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/dy/entity/UserDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/dy/dao/userDao.xml" />
       </list>
     </option>
   </component>
@@ -207,10 +232,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-78" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="x" value="-147" />
+    <option name="y" value="-16" />
+    <option name="width" value="2420" />
+    <option name="height" value="1172" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -219,12 +244,130 @@
           <State>
             <id />
           </State>
-        </expanded-state>
-        <selected-state>
           <State>
             <id>Android</id>
           </State>
-        </selected-state>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness &gt; Messages</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Internationalization</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Internationalization &gt; Bidirectional Text</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Performance</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability &gt; Icons</id>
+          </State>
+          <State>
+            <id>Android Lint for Kotlin</id>
+          </State>
+          <State>
+            <id>Application Server Specific Inspections</id>
+          </State>
+          <State>
+            <id>Batch Applications Issues</id>
+          </State>
+          <State>
+            <id>CDI(Contexts and Dependency Injection) issues</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Google Web Toolkit issues</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>Hibernate Issues</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>JBoss Seam issues</id>
+          </State>
+          <State>
+            <id>JPA issues</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java EE issues</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Maven</id>
+          </State>
+          <State>
+            <id>Pages Navigation Model</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Portability issuesJava</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>SetupSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spring IntegrationSpring</id>
+          </State>
+          <State>
+            <id>Spring SecuritySpring</id>
+          </State>
+          <State>
+            <id>Spring Web ServicesSpring</id>
+          </State>
+          <State>
+            <id>Struts</id>
+          </State>
+          <State>
+            <id>Struts 2Struts</id>
+          </State>
+          <State>
+            <id>TestNGJava</id>
+          </State>
+          <State>
+            <id>Web Services</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+          <State>
+            <id>XMLSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
       </profile-state>
     </entry>
   </component>
@@ -304,14 +447,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="southdream" type="b2602c69:ProjectViewProjectNode" />
-              <item name="southdream" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="southdream" type="b2602c69:ProjectViewProjectNode" />
@@ -660,38 +795,45 @@
       <option name="project" value="LOCAL" />
       <updated>1534407467607</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="mybatis中用foreach遍历map&#10;--UserDaoTest.java有bug">
+      <created>1534474785525</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1534474785525</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserDaoTest_findUserPratice - 2018.08.17 at 10h 27m 07s.xml">
-      <configuration name="UserDaoTest.findUserPratice" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_findUserPratice - 2018.08.17 at 10h 27m 19s.xml">
-      <configuration name="UserDaoTest.findUserPratice" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_findUserPratice - 2018.08.17 at 10h 29m 11s.xml">
-      <configuration name="UserDaoTest.findUserPratice" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_findUserPratice - 2018.08.17 at 10h 38m 18s.xml">
-      <configuration name="UserDaoTest.findUserPratice" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_findUserPratice - 2018.08.17 at 10h 40m 02s.xml">
-      <configuration name="UserDaoTest.findUserPratice" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_findUserPratice - 2018.08.17 at 10h 52m 05s.xml">
-      <configuration name="UserDaoTest.findUserPratice" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_findUserPratice - 2018.08.17 at 10h 54m 21s.xml">
-      <configuration name="UserDaoTest.findUserPratice" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_findUserPratice - 2018.08.17 at 10h 55m 21s.xml">
-      <configuration name="UserDaoTest.findUserPratice" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_findUserPratice - 2018.08.17 at 10h 55m 57s.xml">
-      <configuration name="UserDaoTest.findUserPratice" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserDaoTest_findUserPratice - 2018.08.17 at 10h 58m 03s.xml">
+      <configuration name="UserDaoTest.findUserPratice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_findUserPratice - 2018.08.17 at 11h 00m 33s.xml">
+      <configuration name="UserDaoTest.findUserPratice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_findUserPratice - 2018.08.17 at 11h 06m 33s.xml">
+      <configuration name="UserDaoTest.findUserPratice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_findUserPratice - 2018.08.17 at 11h 07m 52s.xml">
+      <configuration name="UserDaoTest.findUserPratice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_findUserPratice - 2018.08.17 at 11h 08m 24s.xml">
+      <configuration name="UserDaoTest.findUserPratice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_findUserPratice - 2018.08.17 at 11h 09m 15s.xml">
+      <configuration name="UserDaoTest.findUserPratice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_findUserPratice - 2018.08.17 at 11h 09m 31s.xml">
+      <configuration name="UserDaoTest.findUserPratice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_findUserPratice - 2018.08.17 at 11h 10m 05s.xml">
+      <configuration name="UserDaoTest.findUserPratice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_findUserPratice - 2018.08.17 at 11h 14m 49s.xml">
+      <configuration name="UserDaoTest.findUserPratice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest_findUserPratice - 2018.08.17 at 13h 18m 15s.xml">
       <configuration name="UserDaoTest.findUserPratice" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -705,7 +847,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-78" width="1936" height="1066" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -715,7 +857,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14797008" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3429844" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41402715" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -805,7 +947,8 @@
     <MESSAGE value="LinkedList小试身手。" />
     <MESSAGE value="mapper中把id放在后面一目了然啊。" />
     <MESSAGE value="car类中两个属性是两个类。" />
-    <option name="LAST_COMMIT_MESSAGE" value="car类中两个属性是两个类。" />
+    <MESSAGE value="mybatis中用foreach遍历map&#10;--UserDaoTest.java有bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="mybatis中用foreach遍历map&#10;--UserDaoTest.java有bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -826,20 +969,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.2.6/mybatis-3.2.6-sources.jar!/org/apache/ibatis/parsing/XNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2570">
-          <caret line="375" column="40" lean-forward="false" selection-start-line="375" selection-start-column="40" selection-end-line="375" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.2.6/mybatis-3.2.6-sources.jar!/org/apache/ibatis/session/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1450">
-          <caret line="133" column="36" lean-forward="false" selection-start-line="133" selection-start-column="36" selection-end-line="133" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.2.6/mybatis-3.2.6.jar!/org/apache/ibatis/session/SqlSessionFactoryBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
@@ -1148,21 +1277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/configuration.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1073">
-          <caret line="70" column="40" lean-forward="false" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dy/dao/CarDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/dy/entity/CourseDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
@@ -1249,10 +1363,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Java/java8u171/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="110" column="19" lean-forward="false" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dy/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="32" column="71" lean-forward="false" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="71" />
+        <state relative-caret-position="628">
+          <caret line="32" column="54" lean-forward="false" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1261,34 +1383,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        <state relative-caret-position="81">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dy/entity/UserDaoTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/configuration.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="50" column="22" lean-forward="false" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
-          <folding>
-            <element signature="e#949#955#0" expanded="true" />
-            <element signature="e#1373#1389#0" expanded="true" />
-            <element signature="method#getSessionFactory#0;class#UserDaoTest#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="243">
+          <caret line="45" column="14" lean-forward="false" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dy/dao/CarDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dbConfig.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/dy/dao/userDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="75" column="14" lean-forward="false" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
+        <state relative-caret-position="324">
+          <caret line="35" column="45" lean-forward="true" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
           <folding>
-            <marker date="1534474714875" expanded="true" signature="1628:1663" ph="select * fro... user" />
-            <marker date="1534474714875" expanded="true" signature="1792:1916" ph="insert into user... " />
-            <marker date="1534474714875" expanded="true" signature="2044:2169" ph="update user " />
-            <marker date="1534474714875" expanded="true" signature="2299:2332" ph="delete from " />
-            <marker date="1534474714875" expanded="true" signature="2902:2935" ph="insert into users... " />
+            <marker date="1534475357145" expanded="true" signature="1628:1663" ph="select * fro... user" />
+            <marker date="1534475357145" expanded="true" signature="1792:1916" ph="insert into user... " />
+            <marker date="1534475357145" expanded="true" signature="2044:2169" ph="update user " />
+            <marker date="1534475357145" expanded="true" signature="2299:2332" ph="delete from " />
+            <marker date="1534475357145" expanded="true" signature="2902:2935" ph="insert into users... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dy/entity/UserDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="55" column="34" lean-forward="true" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+          <folding>
+            <element signature="e#982#988#0" expanded="true" />
+            <element signature="e#1406#1422#0" expanded="true" />
+            <element signature="method#getSessionFactory#0;class#UserDaoTest#0" expanded="false" />
           </folding>
         </state>
       </provider>

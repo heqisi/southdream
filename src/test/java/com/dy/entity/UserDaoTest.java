@@ -1,6 +1,7 @@
 package com.dy.entity;
 
 import com.dy.dao.UserDao;
+import com.mysql.jdbc.Connection;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -27,7 +28,6 @@ public class UserDaoTest {
             User user = userMapper.findUserById(2);
             Assert.assertNotNull("没找到数据", user);
             System.out.println(user.getName());
-
             /*
             练习使用foreach--查询指定集合的数量
              */
@@ -47,12 +47,13 @@ public class UserDaoTest {
              */
             Map<String,String> usermap=new HashMap<String, String>();
             //Map usermap=new HashMap();
-            usermap.put("8","user8");
-            usermap.put("9","user9");
-            System.out.println(usermap);
+            usermap.put("8","user18");
+            usermap.put("9","user19");
             userMapper.patchInsert(usermap);
+            sqlSession.commit();
 
         } catch (Exception e) {
+            sqlSession.rollback();
             e.printStackTrace();
         } finally {
             sqlSession.close();
