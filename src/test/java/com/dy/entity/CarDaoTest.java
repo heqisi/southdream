@@ -28,13 +28,6 @@ public class CarDaoTest {
                 Car car1=cars.get(i);
                 System.out.println(car1.getBrakes().getBrakestype());
             }
-           /* Assert.assertEquals(4, cars.size());
-            Assert.assertEquals("VW", cars.get(0).getType());
-            Assert.assertNotNull(cars.get(0).getEngine());
-            Assert.assertNull(cars.get(0).getBrakestype());
-            Assert.assertEquals("Opel", cars.get(1).getType());
-            Assert.assertNull(cars.get(1).getEngine());
-            Assert.assertNotNull(cars.get(1).getBrakestype());*/
         } finally {
             sqlSession.close();
         }

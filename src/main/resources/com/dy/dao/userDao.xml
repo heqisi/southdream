@@ -51,4 +51,30 @@
         <delete  parameterType="user" id="deleteUser">
             delete from user where id = #{id};
         </delete>
-        </mapper>
+
+    <!--练习foreach使用-->
+    <select resultType="_int" parameterType="list" id="countByUserList">
+        select count(*) from users
+        <where>
+            id in
+            <foreach item="item" collection="list" separator="," open="(" close=")" index="">
+                #{item.id, jdbcType=NUMERIC}
+            </foreach>
+        </where>
+    </select>
+
+    <!--
+     * 
+     *@Description:批量插入map中数据
+     *
+     * @auther: yuanmaojun
+     * @date: 2018.8.17 9:13
+    -->
+    <insert parameterType="java.util.HashMap" id="patchInsert">
+        insert into users(id,name) VALUES
+        <foreach   item="key" collection="params.keys" open=""  separator="," close="">
+            (${key},#{params[${key}]})
+        </foreach>
+    </insert>
+
+</mapper>
