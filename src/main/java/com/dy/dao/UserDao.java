@@ -3,11 +3,10 @@ package com.dy.dao;
 import com.dy.entity.User;
 import org.apache.ibatis.annotations.Param;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
+/*
  * @Auther: yuanmaojun
  * @Date: 2018.8.13 11:13
  * @Description:
@@ -31,4 +30,6 @@ public interface UserDao {
     批量插入map中数据
      */
     public  void patchInsert(@Param("params")Map<String,String> usermap);
+
+    public  void patchInsert2(Map<String,String> usermap);
 }

@@ -69,6 +69,8 @@
      *
      * @auther: yuanmaojun
      * @date: 2018.8.17 9:13
+     *下面如果写成open="(" close=")" sql拼成：insert into users(id,name) VALUES ( 8,? , 9,? )
+     *                                正确：insert into users(id,name) VALUES (8,?) , (9,?)
     -->
     <insert parameterType="java.util.HashMap" id="patchInsert">
         insert into users(id,name) VALUES
@@ -77,4 +79,17 @@
         </foreach>
     </insert>
 
+    <!--
+     * 
+     *@Description:研究foreach遍历map进行批量插入-下面有bug-参数错误。
+     *
+     * @auther: yuanmaojun
+     * @date: 2018.8.17 15:58
+    -->
+    <insert parameterType="java.util.HashMap" id="patchInsert2">
+        insert into users(id,name) VALUES
+        <foreach  collection="map" index="index" item="item" open=""  separator="," close="">
+            (#{index},#{item[${key}]})
+        </foreach>
+    </insert>
 </mapper>

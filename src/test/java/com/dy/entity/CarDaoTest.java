@@ -19,7 +19,7 @@ public class CarDaoTest {
 
     @Test
     public void shouldGetAllCars() {
-        SqlSession sqlSession = getSessionFactory().openSession();
+        SqlSession sqlSession = ConnDB.getSessionFactory().openSession();
         try {
             CarDao car = sqlSession.getMapper(CarDao.class);
             List<Car> cars = car.getCar();

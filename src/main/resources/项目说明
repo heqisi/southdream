@@ -12,3 +12,6 @@ org.apache.ibatis.binding.BindingException: Type interface com.dy.dao.CarDao is 
 solution:
 1、carDao.xml中，<mapper namespace="com.dy.dao.CarDao">  之前是courseDao.xml
 2、carDao.xml中，property和column乱七八糟的，不对应。
+
+
+项目使用本地southdream数据库

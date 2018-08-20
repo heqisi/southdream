@@ -39,6 +39,8 @@
         <typeAlias alias="engine" type="com.dy.entity.Engine" />
         <typeAlias alias="brakestype" type="com.dy.entity.Brakes" />
         <typeAlias alias="car" type="com.dy.entity.Car" />
+
+        <typeAlias alias="sysuser" type="com.dy.entity.SysUser" />
     </typeAliases>
 
     <environments default="development">
@@ -69,6 +71,7 @@
         <mapper resource="com/dy/dao/studentDao.xml"/>
         <mapper resource="com/dy/dao/courseDao.xml"/>
         <mapper resource="com/dy/dao/carDao.xml"/>
+        <mapper resource="com/dy/dao/SysUserDao.xml"/>
     </mappers>
 
 

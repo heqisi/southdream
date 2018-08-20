@@ -52,6 +52,15 @@ public class UserDaoTest {
             userMapper.patchInsert(usermap);
             sqlSession.commit();
 
+             /*
+            练习使用foreach--批量插入数据
+             */
+//            Map<String,String> usermap2=new HashMap<String, String>();
+//            usermap2.put("10","user20");
+//            usermap2.put("11","user21");
+//            userMapper.patchInsert2(usermap2);
+//            sqlSession.commit();
+
         } catch (Exception e) {
             sqlSession.rollback();
             e.printStackTrace();
